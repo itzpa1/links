@@ -1,13 +1,14 @@
 import React from 'react';
 import { BsThreeDots } from "react-icons/bs";
 
-const LongBar = () => {
+const LongBar = ({data}) => {
+    console.log(data)
     return (
-        <div className='cursor-pointer hover:scale-[1.010] duration-150 shadow-md shadow-black/20 hover:shadow-lg w-[65%] h-[70px] bg-white rounded-full p-3 flex justify-between items-center '>
+        <div className='cursor-pointer hover:scale-[1.010] duration-150 shadow-md shadow-black/20 hover:shadow-lg w-full h-[70px] bg-white rounded-3xl p-3 flex justify-between items-center '>
             <div className="bar_logo w-[50px] overflow-hidden rounded-full ">
-                <img src="https://topmate.io/_next/image?url=https%3A%2F%2Ftopmate-staging.s3.amazonaws.com%2FhSjVHxkRkq977DkN96pGXY.png&w=256&q=75" alt="" />
+                <img src={data.img} alt="" />
             </div>
-            <h1 className="bar_name text-base font-medium">Claim your linksDir</h1>
+            <h1 className="bar_name text-base font-medium">Claim your links.Dir</h1>
             <BsThreeDots className='text-base text-black/70 hover:text-black rotate-90 mr-2' />
         </div>
     )

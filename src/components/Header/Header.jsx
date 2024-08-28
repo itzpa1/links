@@ -3,7 +3,7 @@ import { BsThreeDots } from "react-icons/bs";
 
 const Header = () => {
     return (
-        <header className='header w-[60%] pt-6 flex flex-col items-center px-3'>
+        <header className='header w-full pt-6 flex flex-col items-center px-3'>
             <div className="more_icon w-full flex justify-end ">
                 <div className="more_btn p-3 bg-black/20 hover:bg-black/10 duration-300 rounded-full cursor-pointer">
                     <BsThreeDots className='text-base text-white' />

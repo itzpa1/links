@@ -12,7 +12,17 @@
 
 #app{
     background: url(/src/assets/bg.jpg);
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.card_img:hover img{
+  transform: scale(1.1);
+}
+
+.social_icons svg:hover{
+  transform: scale(.9);
+  transition: .2s;
 }
